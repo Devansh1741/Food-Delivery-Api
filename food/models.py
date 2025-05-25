@@ -27,6 +27,8 @@ class User(models.Model):
     def __str__(self):
         return self.name
 
+
+
 class Order(models.Model):
     ORDER_STATUS_CHOICES = [
         ('preparing', 'Preparing'),
@@ -49,6 +51,8 @@ class Order(models.Model):
         choices=ORDER_STATUS_CHOICES,
         default='preparing'
     )
+
+    # Used ManyToManyField in Order to automatically create a join table between the dishes and orders 
     items = models.ManyToManyField(Dish)
 
     def __str__(self):
