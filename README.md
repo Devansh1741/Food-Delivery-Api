@@ -89,11 +89,12 @@ Response Example:
 
 You can now use Postman or cURL to:
 
-Place an Order via POST /users/<user_id>/payment/
-Check Orders via GET /users/<user_id>/orders
-Track a Specific Order via GET /orders/{order_id
-Update Order Status to "Delivering" via POST /orders/{order_id}/send
-Mark as "Delivered" via POST /orders/{order_id}/deliver/
+- Place an Order via `POST /users/<user_id>/payment/`
+- Check Orders via `GET /users/<user_id>/orders`
+- Track a Specific Order via `GET /orders/{order_id}`
+- Update Order Status to "Delivering" via `POST /orders/{order_id}/send`
+- Mark as "Delivered" via `POST /orders/{order_id}/deliver/`
+
 
 
 # 📁 Project Structure (Relevant Files)
